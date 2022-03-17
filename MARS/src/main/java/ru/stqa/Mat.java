@@ -7,5 +7,6 @@ public class Mat {
         System.out.println(3 - 2);
         System.out.println(4 / 2);
         System.out.println(1.0 / 2);
+        System.out.println(2 + "числа");
     }
 }
