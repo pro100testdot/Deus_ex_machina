@@ -1,7 +1,7 @@
 package ru.stqa;
 
 
-public class text {
+public class ProText {
     public static void main(String[] args) {
         int q = 7;
         int z = q * q;
