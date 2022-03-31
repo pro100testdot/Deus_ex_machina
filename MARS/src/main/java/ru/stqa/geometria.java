@@ -3,22 +3,23 @@ package ru.stqa;
 public class geometria {
     public static void main(String[] args) {
 
-        double l = 5;
-        System.out.println("Площадь квадрата со стророной " + l + " = " + area(l));
-        double len = 5;
+        Square s = new Square();
+        s.l = 5;
+        System.out.println("Площадь квадрата со стророной " + s.l + " = " + area(s));
 
-        double a = 5;
-        double b = 6;
-        System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b +" = "+ area(a,b));
+        Rectangle r = new Rectangle();
+        r.a = 5;
+        r.b = 6;
+        System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b +" = "+ area(r));
 
     }
 
-    public static double area(double l) {
-        return l * l;
+    public static double area(Square s) {
+        return s.l * s.l;
     }
 
-    public static double area(double a, double b) {
-        return a * b;
+    public static double area(Rectangle r) {
+        return r.a * r.b;
     }
 
 }
