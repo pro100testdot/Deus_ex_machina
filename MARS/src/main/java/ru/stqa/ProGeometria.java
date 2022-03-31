@@ -1,6 +1,6 @@
 package ru.stqa;
 
-public class geometria {
+public class ProGeometria {
     public static void main(String[] args) {
 
         Square s = new Square(5);
