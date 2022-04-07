@@ -1,4 +1,3 @@
-
 public class Helper {
 
     public static void main(String[] args) {
@@ -10,7 +9,7 @@ public class Helper {
 
 }
 
-class Point {
+class Point{
     private double x;
     private double y;
 
@@ -19,7 +18,35 @@ class Point {
         this.y = y1;
     }
 
-    public double distance(Point p2) {
+    public double distance(Point p2){
         return Math.sqrt((p2.x - this.x) * (p2.x - this.x) + (p2.y - this.y) * (p2.y - this.y));
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    @Override
+    public String toString() {
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
+}
+    public double getY() {
+        return y;
+    }
+
+    @Override
+    public String toString() {
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
     }
 }
