@@ -9,6 +9,7 @@ public class BasePoint {
         this.x2 = x2;
         this.y2 = y2;
 
+
     }
 
     public double distance() {
