@@ -1,4 +1,4 @@
-package stqa;
+package staqa2;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
