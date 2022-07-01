@@ -10,21 +10,22 @@ public class CreateUser {
 
   private WebDriver driver;
 
-  @BeforeClass(alwaysRun = true)
+  @BeforeMethod(alwaysRun = true)
   public void setUp() {
     System.setProperty("webdriver.gecko.driver", "C:\\Users\\Qa_Gadrel\\Desktop\\geckodriver-v0.31.0-win64\\geckodriver.exe");
     driver = new FirefoxDriver();
     driver.manage().window().maximize();
-  }
-
-  @Test
-  public void testCommonActions() throws Exception {
     //login
     driver.get("http://localhost/addressbook/");
     driver.findElement(By.name("user")).click();
     driver.findElement(By.name("user")).sendKeys("Admin");
     driver.findElement(By.name("pass")).click();
     driver.findElement(By.name("pass")).sendKeys("secret");
+  }
+
+  @Test
+  public void testCommonActions() throws Exception {
+
     //add address book entry
     driver.findElement(By.xpath("/html/body/div/div[4]/form/input[3]")).click();
     driver.findElement(By.className("all")).click();
